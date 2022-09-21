@@ -2842,22 +2842,22 @@ html.menu-opened body {
 	position: relative;
 }
 .sidebar-menu li a {
-	color: #95979b;
+	color: #2d3d83;
 	display: block;
 	font-size: 15px;
 	height: auto;
 	padding: 0 20px;
 }
 .sidebar-menu li a:hover {
-	color: #7638ff;
+	color: #e24a22;
 }
 .sidebar-menu > ul > li > a:hover {
 	background-color: rgba(118, 56, 255, 0.05);
-    color: #7638ff; 
+    color: #e24a22; 
 }
 .sidebar-menu li.active > a {
 	background-color: rgba(118, 56, 255, 0.05);
-    color: #7638ff;
+    color: #e24a22;
 	position: relative;
 }
 .sidebar-menu li.active > a::before {
@@ -2867,7 +2867,7 @@ html.menu-opened body {
     position: absolute;
     left: 0;
     top: 0;
-    background: #7638ff;
+    background: #e24a22;
     -webkit-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
@@ -2899,7 +2899,7 @@ html.menu-opened body {
 	padding: 10px 15px;
 }
 .sidebar-menu ul ul a.active {
-    color: #7638ff;
+    color: #e24a22;
 }
 .mobile_btn {
 	display: none;

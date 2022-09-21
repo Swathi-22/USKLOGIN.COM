@@ -4,13 +4,13 @@
     <div class="sidebar-inner slimscroll">
         <div id="sidebar-menu" class="sidebar-menu">
             <ul>
-                <li class="active">
+                <li class="{% if is_index %} active {% endif %}">
                     <a href="{% url 'web:index' %}"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
                 </li>
-                <li>
+                <li class="{% if is_service %} active {% endif %}">
                     <a href="{% url 'web:service' %}"><i class="fa-solid fa-handshake"></i> <span>Services</span></a>
                 </li>
-                <li>
+                <li class="{% if is_poster %} active {% endif %}">
                     <a href="{% url 'web:generatePoster' %}"><i class="fa-solid fa-image"></i> <span>Generate Posters</span></a>
                 </li>
                 <!-- <li class="submenu">
@@ -26,13 +26,13 @@
     <li><a href="invoices-settings.html">Invoices Settings</a></li>
     </ul>
     </li> -->
-                <li>
+                <li class="{% if is_bill %} active {% endif %}">
                     <a href="{% url 'web:generateBill' %}"><i class="fa-solid fa-file-invoice-dollar"></i> <span>Generate Bills</span></a>
                 </li>
-                <li>
+                <li class="{% if is_form %} active {% endif %}">
                     <a href="{% url 'web:generateForms' %}"><i class="fa-solid fa-file-contract"></i> <span>Generate Forms</span></a>
                 </li>
-                <li>
+                <li class="{% if is_document %} active {% endif %}">
                     <a href="{% url 'web:documents' %}"><i class="fa-solid fa-file"></i> <span>Documents</span></a>
                 </li>
                 <!-- <li class="submenu">
@@ -55,7 +55,7 @@
     <li><a href="blog-categories.html">Categories</a></li>
     </ul>
     </li> -->
-                <li>
+                <li class="{% if is_software %} active {% endif %}">
                     <a href="{% url 'web:software' %}"><i class="fa-brands fa-android"></i></i> <span>Softwares</span></a>
                 </li>
                 <!-- <li class="submenu">
@@ -69,7 +69,7 @@
     <li class="menu-title">
     <span>Pages</span>
     </li> -->
-                <li>
+                <li class="{% if is_tool %} active {% endif %}">
                     <a href="{% url 'web:tools' %}"><i class="fa-solid fa-screwdriver-wrench"></i><span>Tools</span></a>
                 </li>
                 <!-- <li class="submenu">
@@ -88,26 +88,26 @@
     <li><a href="error-500.html">500 Error </a></li>
     </ul>
     </li> -->
-                <li>
+                <li class="{% if is_tip %} active {% endif %}">
                     <a href="{% url 'web:marketingTip' %}"><i class="fa-solid fa-lines-leaning"></i><span>Marketing Tips</span></a>
                 </li>
-                <li>
+                <li class="{% if is_idea %} active {% endif %}">
                     <a href="{% url 'web:otherIdea' %}"><i class="fa-solid fa-lightbulb"></i><span>Other Ideas</span></a>
                 </li>
-                <li>
+                <li class="{% if is_portal %} active {% endif %}">
                     <a href="{% url 'web:agencyPortal' %}"><i class="fa-solid fa-globe"></i><span>Agency Portals</span></a>
                 </li>
-                <li>
+                <li class="{% if is_backservice %} active {% endif %}">
                     <a href="{% url 'web:backOfficeServices' %}"><i class="fa-solid fa-house-laptop"></i><span>Back Office Services</span></a>
                 </li>
-                <li>
+                <li class="{% if is_bonus %} active {% endif %}">
                     <a href="{% url 'web:bonus' %}"><i class="fa-solid fa-award"></i> <span>Bonus for USK Agent</span></a>
                 </li>
-                <li>
-                    <a href="{% url 'web:profile' %}"><i data-feather="map-pin"></i> <span>My Account</span></a>
+                <li class="{% if is_profile %} active {% endif %}">
+                    <a href="{% url 'web:profile' %}"><i class="fa-solid fa-user"></i><span>My Account</span></a>
                 </li>
-                <li>
-                    <a href="{% url 'web:support' %}"><i data-feather="map-pin"></i> <span>Support</span></a>
+                <li class="{% if is_support %} active {% endif %}"> 
+                    <a href="{% url 'web:support' %}"><i class="fa-solid fa-hands-holding-child"></i><span>Support</span></a>
                 </li>
 
 
