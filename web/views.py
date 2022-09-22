@@ -49,6 +49,20 @@ def service(request):
     return render(request,'web/service.html',context)
 
 
+def subService(request):
+    context = {
+        
+    }
+    return render(request,'web/sub-services.html',context)
+
+
+def serviceDetails(request):
+    context = {
+        
+    }
+    return render(request,'web/service-details.html',context)
+
+
 def generatePoster(request):
     context = {
         "is_poster":True,

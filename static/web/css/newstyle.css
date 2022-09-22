@@ -107,6 +107,9 @@ box-shadow:none !important;
   padding: 10px 20px;
   color: #e55e3a;
 }
+
+
+
 /* dashboard new-service section */
 .parent {
   display: contents;
@@ -226,6 +229,56 @@ box-shadow:none !important;
   color: #e55e3a;
   font-size: 16px;
 }
+.serviec-main-head-a:hover{
+  color: #e55e3a;
+  font-size: 16px;
+}
+.service-detail-button{
+  border: 1px solid  #2d3d83;
+  border-radius: 20px;
+  background-color:  #2d3d83;
+  padding: 10px 20px;
+  color: #e55e3a;
+  width: 40%;
+  margin: 8px 145px;
+} 
+
+
+/* generate poster */
+ 
+.col-carousel {
+	margin: 70px 0;
+}
+
+/* owl nav */
+.owl-prev span, .owl-next span {
+	color: #FFF;
+}
+
+.owl-prev span:hover, 
+.owl-next span:hover {
+	color: #8199A3;
+}
+
+.owl-prev, .owl-next {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.owl-prev {
+	left: 7px;
+}
+
+.owl-next {
+	right: 7px;
+}
+
+/* removing blue outline from buttons */
+button:focus, button:active {
+   outline: none;
+}
+
 
 
 
